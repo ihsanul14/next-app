@@ -3,16 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 30001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.3",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
-    "winston": "^3.13.0"
+    "typeorm": "^0.3.20",
+    "winston": "^3.13.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",

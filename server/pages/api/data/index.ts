@@ -5,6 +5,7 @@ import Jwt from '@/application/middleware/jwt';
 import { DataController } from '@/application/controller/data';
 import Validator from '@/application/middleware/validator';
 import Error from '@/framework/error';
+import apm from 'elastic-apm-node';
 
 export const dataController = new DataController()
 export const controller = new Controller(dataController)
